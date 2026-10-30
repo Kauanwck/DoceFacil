@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Doce Fácil - Doces feitos com carinho para adoçar seu dia.">
+    <title>Doce Fácil | Um carinho em forma de doce</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="announcement">
+        Feito com carinho para deixar seu dia mais doce ♡
+    </div>
+
+    <header class="header">
+        <a href="index.html" class="logo">
+            <span class="logo-icon">✿</span>
+            <span>doce<span class="logo-highlight">fácil</span></span>
+        </a>
+
+        <nav class="navigation">
+            <a href="#inicio">Início</a>
+            <a href="#produtos">Nossos doces</a>
+            <a href="#sobre">Sobre nós</a>
+        </nav>
+
+        <button class="cart-button" onclick="abrirCarrinho()">
+            <span>♡</span>
+            Carrinho
+            <span class="cart-count" id="cartCount">0</span>
+        </button>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <span class="eyebrow">UM PEDACINHO DE FELICIDADE</span>
+
+                <h1>A vida fica mais doce com um <span>docinho.</span></h1>
+
+                <p>
+                    Delícias preparadas com carinho, ingredientes
+                    especiais e muito amor em cada detalhe.
+                </p>
+
+                <a href="#produtos" class="primary-button">
+                    Conheça nossos doces <span>→</span>
+                </a>
+
+                <div class="hero-note">
+                    <span>♡</span> Pequenos momentos, grandes sabores.
+                </div>
+            </div>
+
+            <div class="hero-decoration">
+                <div class="hero-circle"></div>
+                <div class="hero-dessert">🍓</div>
+                <span class="floating-heart heart-one">♡</span>
+                <span class="floating-heart heart-two">✧</span>
+                <span class="floating-heart heart-three">♡</span>
+                <div class="hero-label">Feito com amor</div>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <div>♡ <span>Feito com carinho</span></div>
+            <div>✿ <span>Ingredientes especiais</span></div>
+            <div>♧ <span>Momentos deliciosos</span></div>
+        </section>
+
+        <section class="products-section" id="produtos">
+            <div class="section-heading">
+                <span class="eyebrow">NOSSO CARDÁPIO</span>
+                <h2>Um doce para cada <span>momento.</span></h2>
+                <p>Escolha sua delícia favorita e deixe o dia mais gostoso.</p>
+            </div>
+
+            <div class="categories">
+                <button class="category active" data-category="Todos">Todos</button>
+                <button class="category" data-category="Brigadeiros">Brigadeiros</button>
+                <button class="category" data-category="Brownies">Brownies</button>
+                <button class="category" data-category="Cupcakes">Cupcakes</button>
+            </div>
+
+            <div class="products-grid" id="productsGrid">
+                <div class="loading">
+                    <span class="loader"></span>
+                    Preparando nossas delícias...
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section" id="sobre">
+            <div class="about-decoration">♡</div>
+            <span class="eyebrow">NOSSA ESSÊNCIA</span>
+            <h2>Mais que doces, momentos de felicidade.</h2>
+            <p>
+                Na Doce Fácil, acreditamos que os pequenos detalhes
+                fazem toda a diferença. Cada doce é uma oportunidade
+                de compartilhar carinho e criar boas lembranças.
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="#inicio" class="logo">
+            <span class="logo-icon">✿</span>
+            <span>doce<span class="logo-highlight">fácil</span></span>
+        </a>
+        <p>Feito com amor, especialmente para você. ♡</p>
+        <span>© 2026 Doce Fácil</span>
+    </footer>
+
+    <div class="toast" id="toast"></div>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
